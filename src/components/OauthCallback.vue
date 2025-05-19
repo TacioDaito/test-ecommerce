@@ -22,7 +22,7 @@ async function handleOAuthCallback() {
     const token_response = await axios.post('http://127.0.0.1:8000/oauth/token', {
     grant_type: 'authorization_code',
     client_id: import.meta.env.VITE_OAUTH_CLIENT_ID!,
-    redirect_uri: 'http://localhost:5173/callback',
+    redirect_uri: 'http://localhost:5173',
     code_verifier: codeVerifier,
     code: code,
   });

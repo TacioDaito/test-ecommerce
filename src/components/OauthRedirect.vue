@@ -12,7 +12,7 @@ async function redirectToAuthorization() {
   localStorage.setItem('pkce_code_verifier', codeVerifier);
   const params = new URLSearchParams({
     client_id: import.meta.env.VITE_OAUTH_CLIENT_ID!,
-    redirect_uri: 'http://localhost:5173/callback',
+    redirect_uri: 'http://localhost:5173',
     response_type: 'code',
     scope: '',
     state,
