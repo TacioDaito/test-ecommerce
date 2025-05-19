@@ -1,10 +1,10 @@
 <script lang="ts" setup>
-import OauthCallback from '@/views/OauthCallback.vue'
-import OauthRedirect from '@/views/OauthRedirect.vue'
+import OauthCallback from '@/components/OauthCallback.vue'
+import OauthRedirect from '@/components/OauthRedirect.vue'
 </script>
 
 <template>
-  <div id="app">
+  <div id="app" style="display: flex; flex-direction: column; overflow-wrap: break-word">
       <OauthRedirect />
       <OauthCallback />
   </div>

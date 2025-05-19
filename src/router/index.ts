@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import type { RouteRecordRaw } from 'vue-router';
-import OauthRedirect from '@/views/OauthRedirect.vue';
-import OauthCallback from '@/views/OauthCallback.vue';
+import OauthRedirect from '@/components/OauthRedirect.vue';
+import OauthCallback from '@/components/OauthCallback.vue';
 
 const routes: Array<RouteRecordRaw> = [
   { path: '/redirect', component: OauthRedirect },
